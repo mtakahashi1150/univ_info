@@ -330,7 +330,7 @@ def main():
     logger.info("スクレーピング完了")
     logger.info("=" * 60)
 
-    return 0 if has_any_diff else 1  # ステータスコード（通知判定用）
+    return 0  # 常に正常終了（差分判定は .has_diff ファイルで実施）
 
 
 if __name__ == '__main__':
