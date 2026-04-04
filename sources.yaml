@@ -2,47 +2,69 @@
 # 【ルール】URL は必ずブラウザで確認して実在・内容表示を確認したもののみを記入
 # CI では HTTP 200 + 簡易チェックを行う
 
-# 【スキーマ】
-# universities:
-#   - name: 大学名（公式表記）
-#     sources:
-#       - name: ソース名（「公式オープンキャンパス」など）
-#         url: https://... （検証済み公式 URL）
-#         type: opencampus | event | info  # ページの種別
-#         region: Tokyo | Kanagawa | Chiba | Saitama  # （任意）地域
-#         department: CS | Engineering | Info  # （任意）学科タグ
-#         frequency: daily | weekly | monthly  # 更新頻度の想定
-#       - name: ...
+# ============================================
+# 対象大学: GMARCH、総計上理、4つの工科大学（私立理科系）
+# 学科: 情報科学部、情報学部、情報系
+# エリア: 東京、神奈川、千葉、埼玉、都内近郊
+# ============================================
 
 universities:
+  # ============ 確認済み GMARCH ============
   - name: "明治大学"
     sources:
-      - name: "公式オープンキャンパス総合案内"
+      - name: "オープンキャンパス公式ページ"
         url: "https://www.meiji.ac.jp/exam/event/opencampus/"
         type: "opencampus"
         region: "Tokyo"
-        department: "CS"
-        frequency: "monthly"
+        department: "情報系"
+        campus: "複数キャンパス"
+        frequency: "annual"
         last_verified: "2026-04-04"
 
-  - name: "早稲田大学"
+  - name: "立教大学"
     sources:
-      - name: "公式オープンキャンパス案内"
-        url: "https://www.waseda.jp/school/admission/opencampus/"
+      - name: "オープンキャンパス公式ページ"
+        url: "https://www.rikkyo.ac.jp/admissions/visit/opencampus/index.html"
         type: "opencampus"
         region: "Tokyo"
-        department: "CS"
-        frequency: "monthly"
+        department: "理学系"
+        campus: "複数キャンパス"
+        frequency: "annual"
         last_verified: "2026-04-04"
 
-  - name: "慶応義塾大学"
+  # ============ 確認済み 工科大学 ============
+  - name: "工学院大学"
     sources:
-      - name: "公式オープンキャンパス"
-        url: "https://www.keio.ac.jp/ja/admissions/event/"
+      - name: "オープンキャンパス公式ページ"
+        url: "https://www.kogakuin.ac.jp/admissions/event/oc.html"
+        type: "opencampus"
+        region: "Tokyo-Saitama"
+        department: "情報学部"
+        campus: "複数キャンパス"
+        frequency: "semi-annual"
+        last_verified: "2026-04-04"
+
+  - name: "電気通信大学"
+    sources:
+      - name: "学域オープンキャンパス公式ページ"
+        url: "https://www.uec.ac.jp/education/undergraduate/event/opencampus.html"
         type: "opencampus"
         region: "Tokyo"
-        department: "CS"
-        frequency: "monthly"
+        department: "情報理工"
+        campus: "調布"
+        frequency: "semi-annual"
+        last_verified: "2026-04-04"
+
+  # ============ 確認済み 総計上理 ============
+  - name: "東京理科大学"
+    sources:
+      - name: "進学イベント・オープンキャンパス"
+        url: "https://www.tus.ac.jp/admissions/university/visittus/opencampus/"
+        type: "opencampus"
+        region: "Tokyo-Chiba"
+        department: "情報系"
+        campus: "複数キャンパス"
+        frequency: "annual"
         last_verified: "2026-04-04"
 
 # 注：sources を追加する際は、必ずブラウザで URL を確認してから commit する。

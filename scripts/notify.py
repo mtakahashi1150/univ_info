@@ -164,6 +164,7 @@ def main():
     gmail_address = os.getenv('GMAIL_ADDRESS')
     gmail_app_password = os.getenv('GMAIL_APP_PASSWORD')
     notify_to_email = os.getenv('NOTIFY_TO_EMAIL')
+    debug_mode = os.getenv('DEBUG', 'false').lower() == 'true'
 
     # 必須チェック
     if not all([gmail_address, gmail_app_password, notify_to_email]):
@@ -178,6 +179,23 @@ def main():
     summary, detailed = notifier.build_notification_body()
 
     subject = "[大学情報] オープンキャンパス情報更新"
+    
+    # DEBUG モード：メール本文をコンソール出力
+    if debug_mode:
+        logger.info("\n" + "=" * 60)
+        logger.info("【テストモード】メール本文プレビュー")
+        logger.info("=" * 60)
+        logger.info(f"件名: {subject}")
+        logger.info(f"送信元: {gmail_address}")
+        logger.info(f"送信先: {notify_to_email}")
+        logger.info("\n【本文】")
+        logger.info(summary)
+        logger.info("\n【詳細】")
+        logger.info(detailed)
+        logger.info("=" * 60 + "\n")
+        return 0
+    
+    # 通常モード：メール送信
     success = notifier.send_email(subject, summary, detailed)
 
     logger.info("=" * 60)

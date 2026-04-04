@@ -2,8 +2,8 @@ name: 大学オープンキャンパス情報スクレーピング・通知
 
 on:
   schedule:
-    # 毎日 08:00 UTC (17:00 JST)
-    - cron: '0 8 * * *'
+    # 毎日 20:00 UTC (05:00 JST 翌日)
+    - cron: '0 20 * * *'
   
   # 手動トリガー
   workflow_dispatch:
