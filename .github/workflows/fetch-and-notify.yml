@@ -54,6 +54,53 @@ jobs:
           git diff --quiet || git commit -m "chore: update university opencampus data [skip ci]"
           git push
       
+      - name: GitHub Pages 用に docs/index.md を更新
+        run: |
+          cat > docs/index.md << 'EOF'
+          # 大学オープンキャンパス情報
+          
+          このページは、定期的に自動収集された大学オープンキャンパス情報を表示しています。
+          
+          **最終更新**: $(date '+%Y年%m月%d日 %H:%M:%S JST')に自動更新
+          
+          ---
+          
+          ## 収集対象大学とイベント情報
+          
+          EOF
+          if [ -f "data/accumulated.md" ]; then
+            tail -n +2 data/accumulated.md >> docs/index.md
+          else
+            echo "（データ取得中...）" >> docs/index.md
+          fi
+          cat >> docs/index.md << 'EOF'
+          
+          ---
+          
+          ## 📊 データについて
+          
+          - **ソース**: `sources.yaml` に登録された検証済みURL からの自動スクレイピング
+          - **更新頻度**: 1日1回（朝5時 JST）
+          - **形式**: Markdown テーブル + JSON スナップショット
+          - **履歴保管**: GitHub リポジトリに完全履歴を蓄積
+          
+          ## 📧 新規情報通知
+          
+          テーブルデータに新規追加があった場合、メール通知が送信されます。
+          
+          ---
+          
+          **詳細**: [GitHub リポジトリ](https://github.com/mtakahashi1150/univ_info/tree/main/data)
+          EOF
+      
+      - name: docs を git へ追加・コミット・プッシュ
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add docs/
+          git diff --quiet || git commit -m "chore: update pages with latest data"
+          git push
+      
       - name: メール通知（差分がある場合のみ）
         if: steps.fetch.outputs.has_diff == '1'
         env:

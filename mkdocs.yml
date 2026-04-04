@@ -1,7 +1,7 @@
-site_name: 大学オープンキャンパス情報アグリケータ
-site_description: 大学オープンキャンパス情報の累積・差分通知・静的公開
-repo_url: https://github.com/YOUR-USERNAME/UnivUnderbarInfo
-repo_name: UnivUnderbarInfo
+site_name: 大学オープンキャンパス情報アグリテータ
+site_description: 大学オープンキャンパス情報の累積・公開
+repo_url: https://github.com/mtakahashi1150/univ_info
+repo_name: univ_info
 
 docs_dir: docs
 site_dir: site
@@ -15,10 +15,7 @@ theme:
     accent: light blue
 
 nav:
-  - ホーム: index.md
-  - 情報一覧: data.md
-  - 使い方: guide.md
-  - 設定: config.md
+  - オープンキャンパス情報: index.md
 
 plugins:
   - search:
@@ -27,5 +24,4 @@ plugins:
 markdown_extensions:
   - tables
   - toc
-  - codehilite
   - md_in_html
