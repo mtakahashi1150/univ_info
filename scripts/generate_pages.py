@@ -22,35 +22,12 @@ if accumulated_file.exists():
 else:
     table_content = "| （データ取得中...） | | | | | | |"
 
-# Generate index.md
-output = f"""# 大学オープンキャンパス情報
-
-このページは、定期的に自動収集された大学オープンキャンパス情報を表示しています。
-
-**最終更新**: {now_jst} に自動更新
+# Generate index.md (シンプル版 - データテーブルのみ)
+output = f"""{table_content}
 
 ---
 
-## 収集対象大学とイベント情報
-
-{table_content}
-
----
-
-## 📊 データについて
-
-- **ソース**: `sources.yaml` に登録された検証済みURL からの自動スクレイピング
-- **更新頻度**: 1日1回（朝5時 JST）
-- **形式**: Markdown テーブル + JSON スナップショット
-- **履歴保管**: GitHub リポジトリに完全履歴を蓄積
-
-## 📧 新規情報通知
-
-テーブルデータに新規追加があった場合、メール通知が送信されます。
-
----
-
-**詳細**: [GitHub リポジトリ](https://github.com/mtakahashi1150/univ_info/tree/main/data)
+*最終更新: {now_jst}*
 """
 
 output_file.write_text(output)
