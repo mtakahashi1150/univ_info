@@ -3,68 +3,191 @@
 # CI では HTTP 200 + 簡易チェックを行う
 
 # ============================================
-# 対象大学: GMARCH、総計上理、4つの工科大学（私立理科系）
-# 学科: 情報科学部、情報学部、情報系
-# エリア: 東京、神奈川、千葉、埼玉、都内近郊
+# 対象エリア: 東京都、神奈川県、千葉県、埼玉県
+# 対象学部・学科: 情報工学・情報科学系及び理工情報系
+# グループ: 早慶上理、G-MARCH、東京4理工（四工大）、首都圏私立理工
 # ============================================
 
 universities:
-  # ============ 確認済み GMARCH ============
-  - name: "明治大学"
+  # ============ 早慶上理 ============
+  - name: "早稲田大学"
     sources:
-      - name: "オープンキャンパス公式ページ"
-        url: "https://www.meiji.ac.jp/exam/event/opencampus/"
+      - name: "理工学部オープンキャンパス"
+        url: "https://www.waseda.jp/inst/admission/event/oc/"
         type: "opencampus"
         region: "Tokyo"
-        department: "情報系"
-        campus: "複数キャンパス"
+        department: "基幹理工学部・創造理工学部・先進理工学部"
+        campus: "西早稲田キャンパス"
         frequency: "annual"
-        last_verified: "2026-04-04"
+        last_verified: "2026-04-05"
 
-  - name: "立教大学"
+  - name: "慶應義塾大学"
     sources:
-      - name: "オープンキャンパス公式ページ"
-        url: "https://www.rikkyo.ac.jp/admissions/visit/opencampus/index.html"
+      - name: "理工学部オープンキャンパス"
+        url: "https://www.keio.ac.jp/ja/admission/guide/experience/"
         type: "opencampus"
-        region: "Tokyo"
-        department: "理学系"
-        campus: "複数キャンパス"
+        region: "Tokyo-Kanagawa"
+        department: "理工学部"
+        campus: "日吉・三田キャンパス"
         frequency: "annual"
-        last_verified: "2026-04-04"
+        last_verified: "2026-04-05"
 
-  # ============ 確認済み 工科大学 ============
-  - name: "工学院大学"
+  - name: "上智大学"
     sources:
-      - name: "オープンキャンパス公式ページ"
-        url: "https://www.kogakuin.ac.jp/admissions/event/oc.html"
-        type: "opencampus"
-        region: "Tokyo-Saitama"
-        department: "情報学部"
-        campus: "複数キャンパス"
-        frequency: "semi-annual"
-        last_verified: "2026-04-04"
-
-  - name: "電気通信大学"
-    sources:
-      - name: "学域オープンキャンパス公式ページ"
-        url: "https://www.uec.ac.jp/education/undergraduate/event/opencampus.html"
+      - name: "理工学部オープンキャンパス"
+        url: "https://www.sophia.ac.jp/jpn/admission/"
         type: "opencampus"
         region: "Tokyo"
-        department: "情報理工"
-        campus: "調布"
-        frequency: "semi-annual"
-        last_verified: "2026-04-04"
+        department: "理工学部"
+        campus: "四谷キャンパス"
+        frequency: "annual"
+        last_verified: "2026-04-05"
 
-  # ============ 確認済み 総計上理 ============
   - name: "東京理科大学"
     sources:
-      - name: "進学イベント・オープンキャンパス"
+      - name: "創域情報学部・工学部オープンキャンパス"
         url: "https://www.tus.ac.jp/admissions/university/visittus/opencampus/"
         type: "opencampus"
         region: "Tokyo-Chiba"
-        department: "情報系"
-        campus: "複数キャンパス"
+        department: "創域情報学部・工学部・先進工学部"
+        campus: "野田・葛飾・神楽坂キャンパス"
         frequency: "annual"
-        last_verified: "2026-04-04"
+        last_verified: "2026-04-05"
+
+  # ============ G-MARCH ============
+  - name: "明治大学"
+    sources:
+      - name: "理工学部・情報科学科オープンキャンパス"
+        url: "https://www.meiji.ac.jp/exam/event/opencampus/"
+        type: "opencampus"
+        region: "Tokyo-Kanagawa"
+        department: "理工学部・総合数理学部"
+        campus: "中野・駿河台・生田キャンパス"
+        frequency: "annual"
+        last_verified: "2026-04-05"
+
+  - name: "青山学院大学"
+    sources:
+      - name: "理工学部オープンキャンパス"
+        url: "https://www.aoyama.ac.jp/exam/event/"
+        type: "opencampus"
+        region: "Tokyo-Kanagawa"
+        department: "理工学部・社会情報学部"
+        campus: "相模原・青山キャンパス"
+        frequency: "annual"
+        last_verified: "2026-04-05"
+
+  - name: "立教大学"
+    sources:
+      - name: "人工知能科学部・理学部オープンキャンパス"
+        url: "https://www.rikkyo.ac.jp/admissions/visit/opencampus/index.html"
+        type: "opencampus"
+        region: "Tokyo-Saitama"
+        department: "人工知能科学部・理学部"
+        campus: "新座・池袋キャンパス"
+        frequency: "annual"
+        last_verified: "2026-04-05"
+
+  - name: "中央大学"
+    sources:
+      - name: "理工学部オープンキャンパス"
+        url: "https://www.chuo-u.ac.jp/exam/event/"
+        type: "opencampus"
+        region: "Tokyo"
+        department: "国際情報学部・基幹理工学部・社会理工学部・先進理工学部"
+        campus: "後楽園・市ヶ谷田町・多摩キャンパス"
+        frequency: "annual"
+        last_verified: "2026-04-05"
+
+  - name: "法政大学"
+    sources:
+      - name: "情報科学部・理工学部オープンキャンパス"
+        url: "https://www.hosei.ac.jp/admissions/event/"
+        type: "opencampus"
+        region: "Tokyo"
+        department: "情報科学部・理工学部・デザイン工学部"
+        campus: "小金井・市ケ谷キャンパス"
+        frequency: "annual"
+        last_verified: "2026-04-05"
+
+  - name: "学習院大学"
+    sources:
+      - name: "全学部オープンキャンパス"
+        url: "https://www.gakushuin.ac.jp/admission/"
+        type: "opencampus"
+        region: "Tokyo"
+        department: "理学部等"
+        campus: "目白キャンパス"
+        frequency: "annual"
+        last_verified: "2026-04-05"
+
+  # ============ 東京4理工（四工大） ============
+  - name: "芝浦工業大学"
+    sources:
+      - name: "工学部・システム理工学域オープンキャンパス"
+        url: "https://www.shibaura-it.ac.jp/admission/"
+        type: "opencampus"
+        region: "Tokyo-Saitama"
+        department: "工学部・システム理工学域"
+        campus: "豊洲・大宮キャンパス"
+        frequency: "semi-annual"
+        last_verified: "2026-04-05"
+
+  - name: "東京都市大学"
+    sources:
+      - name: "情報工学部・理工学部オープンキャンパス"
+        url: "https://www.tcu.ac.jp/admission/"
+        type: "opencampus"
+        region: "Tokyo-Kanagawa"
+        department: "情報工学部・理工学部"
+        campus: "世田谷・横浜キャンパス"
+        frequency: "semi-annual"
+        last_verified: "2026-04-05"
+
+  - name: "東京電機大学"
+    sources:
+      - name: "システムデザイン工学部・未来科学部・工学部オープンキャンパス"
+        url: "https://www.dendai.ac.jp/admission/"
+        type: "opencampus"
+        region: "Tokyo-Saitama"
+        department: "システムデザイン工学部・未来科学部・工学部・理工学部"
+        campus: "東京千住・埼玉鳩山キャンパス"
+        frequency: "semi-annual"
+        last_verified: "2026-04-05"
+
+  - name: "工学院大学"
+    sources:
+      - name: "工学部・先端工学部オープンキャンパス"
+        url: "https://www.kogakuin.ac.jp/admissions/event/oc.html"
+        type: "opencampus"
+        region: "Tokyo"
+        department: "工学部・先端工学部"
+        campus: "新宿・八王子キャンパス"
+        frequency: "semi-annual"
+        last_verified: "2026-04-05"
+
+  # ============ 首都圏私立理工 ============
+  - name: "東京工科大学"
+    sources:
+      - name: "コンピュータサイエンス学部・工学部オープンキャンパス"
+        url: "https://www.teu.ac.jp/admission/"
+        type: "opencampus"
+        region: "Tokyo"
+        department: "コンピュータサイエンス学部・工学部"
+        campus: "八王子・蒲田キャンパス"
+        frequency: "semi-annual"
+        last_verified: "2026-04-05"
+
+  # ============ 追加フィード情報 ============
+  - name: "電気通信大学"
+    sources:
+      - name: "学域オープンキャンパス"
+        url: "https://www.uec.ac.jp/education/undergraduate/event/opencampus.html"
+        type: "opencampus"
+        region: "Tokyo"
+        department: "情報理工学域・工学域"
+        campus: "調布キャンパス"
+        frequency: "semi-annual"
+        last_verified: "2026-04-05"
 
 # 注：sources を追加する際は、必ずブラウザで URL を確認してから commit する。
