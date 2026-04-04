@@ -1,0 +1,22 @@
+{
+  "university": "中央大学",
+  "source": "理工学部オープンキャンパス",
+  "source_url": "https://www.chuo-u.ac.jp/exam/event/",
+  "fetched_at": "2026-04-04T15:31:34.809249Z",
+  "events": [
+    {
+      "title": "中央大学 - 理工学部オープンキャンパス",
+      "date": "2026-01-15",
+      "departments": [
+        "国際情報学部",
+        "基幹理工学部",
+        "社会理工学部",
+        "先進理工学部"
+      ],
+      "registration_url": "https://www.chuo-u.ac.jp/exam/event/",
+      "details_url": "https://www.chuo-u.ac.jp/exam/event/",
+      "extraction_method": "text_search",
+      "extracted_at": "2026-04-04T15:31:34.809218Z"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "university": "工学院大学",
+  "source": "工学部・先端工学部オープンキャンパス",
+  "source_url": "https://www.kogakuin.ac.jp/admissions/event/oc.html",
+  "fetched_at": "2026-04-04T15:36:14.723744Z",
+  "events": [
+    {
+      "title": "工学院大学 - 工学部・先端工学部オープンキャンパス",
+      "date": "2026-05-31",
+      "registration_url": "https://www.kogakuin.ac.jp/admissions/event/oc.html",
+      "details_url": "https://www.kogakuin.ac.jp/admissions/event/oc.html",
+      "extraction_method": "table_analysis",
+      "extracted_at": "2026-04-04T15:36:14.723671Z"
+    }
+  ]
+}

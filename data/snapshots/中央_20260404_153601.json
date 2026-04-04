@@ -1,0 +1,16 @@
+{
+  "university": "中央大学",
+  "source": "理工学部オープンキャンパス",
+  "source_url": "https://www.chuo-u.ac.jp/exam/event/",
+  "fetched_at": "2026-04-04T15:36:01.214192Z",
+  "events": [
+    {
+      "title": "中央大学 - 理工学部オープンキャンパス",
+      "date": "2026-01-15",
+      "registration_url": "https://www.chuo-u.ac.jp/exam/event/",
+      "details_url": "https://www.chuo-u.ac.jp/exam/event/",
+      "extraction_method": "semantic_search(期間)",
+      "extracted_at": "2026-04-04T15:36:01.214144Z"
+    }
+  ]
+}

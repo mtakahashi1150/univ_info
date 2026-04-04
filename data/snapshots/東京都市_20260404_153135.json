@@ -1,0 +1,20 @@
+{
+  "university": "東京都市大学",
+  "source": "情報工学部・理工学部オープンキャンパス",
+  "source_url": "https://www.tcu.ac.jp/admission/",
+  "fetched_at": "2026-04-04T15:31:35.539396Z",
+  "events": [
+    {
+      "title": "東京都市大学 - 情報工学部・理工学部オープンキャンパス",
+      "date": "2026-04-01",
+      "departments": [
+        "情報工学部",
+        "理工学部"
+      ],
+      "registration_url": "https://www.tcu.ac.jp/admission/",
+      "details_url": "https://www.tcu.ac.jp/admission/",
+      "extraction_method": "text_search",
+      "extracted_at": "2026-04-04T15:31:35.539370Z"
+    }
+  ]
+}

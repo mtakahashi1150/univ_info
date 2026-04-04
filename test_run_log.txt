@@ -1,0 +1,116 @@
+/Users/aero/VSCode/univ_info/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2026-04-05 00:35:32,966 - INFO - ================================================================================
+2026-04-05 00:35:32,966 - INFO - 【最高度な】大学オープンキャンパス情報スクレーピング
+2026-04-05 00:35:32,966 - INFO - Selenium: 有効 ✓
+2026-04-05 00:35:32,966 - INFO - ================================================================================
+2026-04-05 00:35:32,994 - INFO - ====== WebDriver manager ======
+2026-04-05 00:35:38,634 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-05 00:35:39,058 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-05 00:35:39,093 - INFO - There is no [mac64] chromedriver "146.0.7680.165" for browser google-chrome "146.0.7680" in cache
+2026-04-05 00:35:39,101 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-05 00:35:39,268 - INFO - WebDriver version 146.0.7680.165 selected
+2026-04-05 00:35:39,271 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/146.0.7680.165/mac-arm64/chromedriver-mac-arm64.zip
+2026-04-05 00:35:39,271 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/146.0.7680.165/mac-arm64/chromedriver-mac-arm64.zip
+2026-04-05 00:35:39,330 - INFO - Driver downloading response is 200
+2026-04-05 00:35:39,660 - INFO - Get LATEST chromedriver version for google-chrome
+2026-04-05 00:35:39,814 - INFO - Driver has been saved in cache [/Users/aero/.wdm/drivers/chromedriver/mac64/146.0.7680.165]
+2026-04-05 00:35:42,713 - INFO - ✓ Selenium WebDriver initialized
+2026-04-05 00:35:42,713 - INFO - 
+[早稲田大学]
+2026-04-05 00:35:43,412 - WARNING - ⚠ Requests failed: 404 Client Error: Not Found for url: https://www.waseda.jp/inst/admission/event/oc/
+2026-04-05 00:35:43,413 - INFO -    Retrying with Selenium...
+2026-04-05 00:35:46,557 - INFO - ✓ Fetched: https://www.waseda.jp/inst/admission/event/oc/ (Selenium)
+2026-04-05 00:35:46,571 - WARNING -    ❌ No date found
+2026-04-05 00:35:46,571 - WARNING -   ⚠ No events extracted
+2026-04-05 00:35:46,571 - INFO - 
+[慶應義塾大学]
+2026-04-05 00:35:46,739 - WARNING - ⚠ Requests failed: 404 Client Error: Not Found for url: https://www.keio.ac.jp/ja/admission/guide/experience/
+2026-04-05 00:35:46,740 - INFO -    Retrying with Selenium...
+2026-04-05 00:35:49,178 - INFO - ✓ Fetched: https://www.keio.ac.jp/ja/admission/guide/experience/ (Selenium)
+2026-04-05 00:35:49,227 - WARNING -    ❌ No date found
+2026-04-05 00:35:49,227 - WARNING -   ⚠ No events extracted
+2026-04-05 00:35:49,227 - INFO - 
+[上智大学]
+2026-04-05 00:35:50,480 - WARNING - ⚠ Requests failed: 404 Client Error: Not Found for url: https://www.sophia.ac.jp/jpn/admission/
+2026-04-05 00:35:50,481 - INFO -    Retrying with Selenium...
+2026-04-05 00:35:54,266 - INFO - ✓ Fetched: https://www.sophia.ac.jp/jpn/admission/ (Selenium)
+2026-04-05 00:35:54,983 - WARNING -    ❌ No date found
+2026-04-05 00:35:54,983 - WARNING -   ⚠ No events extracted
+2026-04-05 00:35:54,983 - INFO - 
+[東京理科大学]
+2026-04-05 00:35:55,091 - INFO - ✓ Fetched: https://www.tus.ac.jp/admissions/university/visittus/opencampus/ (requests)
+2026-04-05 00:35:55,167 - INFO -   ✓ 2026-04-19 (差分なし)
+2026-04-05 00:35:55,167 - INFO - 
+[明治大学]
+2026-04-05 00:35:55,289 - INFO - ✓ Fetched: https://www.meiji.ac.jp/exam/event/opencampus/ (requests)
+2026-04-05 00:35:55,429 - INFO -   ✓ 2025-08-06 (差分なし)
+2026-04-05 00:35:55,429 - INFO - 
+[青山学院大学]
+2026-04-05 00:35:55,686 - WARNING - ⚠ Requests failed: 404 Client Error: Not Found for url: https://www.aoyama.ac.jp/exam/event/
+2026-04-05 00:35:55,687 - INFO -    Retrying with Selenium...
+2026-04-05 00:35:58,895 - INFO - ✓ Fetched: https://www.aoyama.ac.jp/exam/event/ (Selenium)
+2026-04-05 00:35:59,101 - WARNING -    ❌ No date found
+2026-04-05 00:35:59,101 - WARNING -   ⚠ No events extracted
+2026-04-05 00:35:59,101 - INFO - 
+[立教大学]
+2026-04-05 00:35:59,364 - INFO - ✓ Fetched: https://www.rikkyo.ac.jp/admissions/visit/opencampus/index.html (requests)
+2026-04-05 00:35:59,419 - INFO -   ✓ 2026-08-03 (差分なし)
+2026-04-05 00:35:59,419 - INFO - 
+[中央大学]
+2026-04-05 00:36:01,032 - INFO - ✓ Fetched: https://www.chuo-u.ac.jp/exam/event/ (requests)
+2026-04-05 00:36:01,214 - INFO -   ✓ 2026-01-15 (差分なし)
+2026-04-05 00:36:01,214 - INFO - 
+[法政大学]
+2026-04-05 00:36:02,132 - WARNING - ⚠ Requests failed: 404 Client Error: Not Found for url: https://www.hosei.ac.jp/admissions/event/
+2026-04-05 00:36:02,133 - INFO -    Retrying with Selenium...
+2026-04-05 00:36:04,855 - INFO - ✓ Fetched: https://www.hosei.ac.jp/admissions/event/ (Selenium)
+2026-04-05 00:36:04,928 - WARNING -    ❌ No date found
+2026-04-05 00:36:04,928 - WARNING -   ⚠ No events extracted
+2026-04-05 00:36:04,928 - INFO - 
+[学習院大学]
+2026-04-05 00:36:05,023 - WARNING - ⚠ Requests failed: 404 Client Error: Not Found for url: https://www.gakushuin.ac.jp/admission/
+2026-04-05 00:36:05,023 - INFO -    Retrying with Selenium...
+2026-04-05 00:36:07,768 - INFO - ✓ Fetched: https://www.gakushuin.ac.jp/admission/ (Selenium)
+2026-04-05 00:36:07,778 - WARNING -    ❌ No date found
+2026-04-05 00:36:07,778 - WARNING -   ⚠ No events extracted
+2026-04-05 00:36:07,778 - INFO - 
+[芝浦工業大学]
+2026-04-05 00:36:07,982 - WARNING - ⚠ Requests failed: 404 Client Error: Not Found for url: https://www.shibaura-it.ac.jp/admission/
+2026-04-05 00:36:07,983 - INFO -    Retrying with Selenium...
+2026-04-05 00:36:10,648 - INFO - ✓ Fetched: https://www.shibaura-it.ac.jp/admission/ (Selenium)
+2026-04-05 00:36:10,972 - WARNING -    ❌ No date found
+2026-04-05 00:36:10,972 - WARNING -   ⚠ No events extracted
+2026-04-05 00:36:10,972 - INFO - 
+[東京都市大学]
+2026-04-05 00:36:11,468 - INFO - ✓ Fetched: https://www.tcu.ac.jp/admission/ (requests)
+2026-04-05 00:36:11,488 - INFO -    Found in list: 2026-04-01
+2026-04-05 00:36:11,489 - INFO -   ✓ 2026-04-01 (差分なし)
+2026-04-05 00:36:11,489 - INFO - 
+[東京電機大学]
+2026-04-05 00:36:11,563 - WARNING - ⚠ Requests failed: 404 Client Error: Not Found for url: https://www.dendai.ac.jp/admission/
+2026-04-05 00:36:11,563 - INFO -    Retrying with Selenium...
+2026-04-05 00:36:14,557 - INFO - ✓ Fetched: https://www.dendai.ac.jp/admission/ (Selenium)
+2026-04-05 00:36:14,584 - WARNING -    ❌ No date found
+2026-04-05 00:36:14,584 - WARNING -   ⚠ No events extracted
+2026-04-05 00:36:14,584 - INFO - 
+[工学院大学]
+2026-04-05 00:36:14,705 - INFO - ✓ Fetched: https://www.kogakuin.ac.jp/admissions/event/oc.html (requests)
+2026-04-05 00:36:14,723 - INFO -    Found in table 1: 2026-05-31
+2026-04-05 00:36:14,724 - INFO -   ✓ 2026-05-31 (差分なし)
+2026-04-05 00:36:14,724 - INFO - 
+[東京工科大学]
+2026-04-05 00:36:17,076 - WARNING - ⚠ Requests failed: 404 Client Error: Not Found for url: https://www.teu.ac.jp/admission/
+2026-04-05 00:36:17,077 - INFO -    Retrying with Selenium...
+2026-04-05 00:36:20,774 - INFO - ✓ Fetched: https://www.teu.ac.jp/admission/ (Selenium)
+2026-04-05 00:36:20,828 - WARNING -    ❌ No date found
+2026-04-05 00:36:20,828 - WARNING -   ⚠ No events extracted
+2026-04-05 00:36:20,828 - INFO - 
+[電気通信大学]
+2026-04-05 00:36:25,107 - INFO - ✓ Fetched: https://www.uec.ac.jp/education/undergraduate/event/opencampus.html (requests)
+2026-04-05 00:36:25,118 - INFO -   ✓ 2026-07-19 (差分なし)
+2026-04-05 00:36:25,119 - INFO - 
+✓ Generated: /Users/aero/VSCode/univ_info/data/accumulated.md
+2026-04-05 00:36:25,120 - INFO - ================================================================================
+2026-04-05 00:36:25,120 - INFO - ✅ 完了: 成功 7件 / 失敗 9件
+2026-04-05 00:36:25,120 - INFO - ================================================================================

@@ -1,0 +1,20 @@
+{
+  "university": "電気通信大学",
+  "source": "学域オープンキャンパス",
+  "source_url": "https://www.uec.ac.jp/education/undergraduate/event/opencampus.html",
+  "fetched_at": "2026-04-04T15:31:36.001393Z",
+  "events": [
+    {
+      "title": "電気通信大学 - 学域オープンキャンパス",
+      "date": "2026-07-19",
+      "departments": [
+        "情報理工学域",
+        "工学域"
+      ],
+      "registration_url": "https://www.uec.ac.jp/education/undergraduate/event/opencampus.html",
+      "details_url": "https://www.uec.ac.jp/education/undergraduate/event/opencampus.html",
+      "extraction_method": "text_search",
+      "extracted_at": "2026-04-04T15:31:36.001363Z"
+    }
+  ]
+}
