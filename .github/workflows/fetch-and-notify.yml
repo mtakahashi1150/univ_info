@@ -1,0 +1,82 @@
+name: 大学オープンキャンパス情報スクレーピング・通知
+
+on:
+  schedule:
+    # 毎日 08:00 UTC (17:00 JST)
+    - cron: '0 8 * * *'
+  
+  # 手動トリガー
+  workflow_dispatch:
+
+jobs:
+  fetch-and-notify:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write  # commit・push のため
+      pages: write
+      id-token: write
+    
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Python 環境をセットアップ
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: 依存パッケージをインストール
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: 情報取得・正規化
+        id: fetch
+        run: |
+          python scripts/fetch.py
+          # 差分フラグを確認
+          if [ -f "data/.has_diff" ]; then
+            HAS_DIFF=$(cat data/.has_diff)
+            echo "has_diff=${HAS_DIFF}" >> $GITHUB_OUTPUT
+          else
+            echo "has_diff=0" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: 変更をコミット・プッシュ
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add data/
+          git diff --quiet || git commit -m "chore: update university opencampus data [skip ci]"
+          git push
+      
+      - name: メール通知（差分がある場合のみ）
+        if: steps.fetch.outputs.has_diff == '1'
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_TO_EMAIL: ${{ secrets.NOTIFY_TO_EMAIL }}
+        run: |
+          python scripts/notify.py
+      
+      - name: 通知スキップ（差分なし）
+        if: steps.fetch.outputs.has_diff == '0'
+        run: |
+          echo "✓ No changes - skipping notification"
+
+  build-static-site:
+    runs-on: ubuntu-latest
+    needs: fetch-and-notify
+    
+    # GitHub Pages へのデプロイは後で実装
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+      
+      - name: "ℹ️ 静的サイトビルドは mkdocs で実装予定"
+        run: |
+          echo "GitHub Pages デプロイは将来実装"

@@ -1,0 +1,15 @@
+{
+  "university": "明治大学",
+  "source": "公式オープンキャンパス総合案内",
+  "source_url": "https://www.meiji.ac.jp/exam/event/opencampus/",
+  "fetched_at": "2026-04-04T00:49:03.727203Z",
+  "events": [
+    {
+      "title": "オープンキャンパス｜入試総合サイト｜明治大学",
+      "date": "2026-08-06",
+      "registration_url": "https://www.meiji.ac.jp/exam/event/opencampus/",
+      "details_url": "https://www.meiji.ac.jp/exam/event/opencampus/",
+      "extracted_at": "2026-04-04T00:49:03.727152Z"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+# 大学オープンキャンパス情報源リスト
+# 【ルール】URL は必ずブラウザで確認して実在・内容表示を確認したもののみを記入
+# CI では HTTP 200 + 簡易チェックを行う
+
+# 【スキーマ】
+# universities:
+#   - name: 大学名（公式表記）
+#     sources:
+#       - name: ソース名（「公式オープンキャンパス」など）
+#         url: https://... （検証済み公式 URL）
+#         type: opencampus | event | info  # ページの種別
+#         region: Tokyo | Kanagawa | Chiba | Saitama  # （任意）地域
+#         department: CS | Engineering | Info  # （任意）学科タグ
+#         frequency: daily | weekly | monthly  # 更新頻度の想定
+#       - name: ...
+
+universities:
+  - name: "明治大学"
+    sources:
+      - name: "公式オープンキャンパス総合案内"
+        url: "https://www.meiji.ac.jp/exam/event/opencampus/"
+        type: "opencampus"
+        region: "Tokyo"
+        department: "CS"
+        frequency: "monthly"
+        last_verified: "2026-04-04"
+
+  - name: "早稲田大学"
+    sources:
+      - name: "公式オープンキャンパス案内"
+        url: "https://www.waseda.jp/school/admission/opencampus/"
+        type: "opencampus"
+        region: "Tokyo"
+        department: "CS"
+        frequency: "monthly"
+        last_verified: "2026-04-04"
+
+  - name: "慶応義塾大学"
+    sources:
+      - name: "公式オープンキャンパス"
+        url: "https://www.keio.ac.jp/ja/admissions/event/"
+        type: "opencampus"
+        region: "Tokyo"
+        department: "CS"
+        frequency: "monthly"
+        last_verified: "2026-04-04"
+
+# 注：sources を追加する際は、必ずブラウザで URL を確認してから commit する。

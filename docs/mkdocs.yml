@@ -1,0 +1,27 @@
+site_name: 大学オープンキャンパス情報アグリケータ
+site_description: 大学オープンキャンパス情報の累積・差分通知・静的公開
+repo_url: https://github.com/your-org/univ_info
+repo_name: univ_info
+
+theme:
+  name: material
+  language: ja
+  palette:
+    primary: blue
+    accent: light blue
+
+nav:
+  - ホーム: index.md
+  - 情報一覧: data.md
+  - 使い方: guide.md
+  - 設定: config.md
+
+plugins:
+  - search:
+      lang: ja
+
+markdown_extensions:
+  - tables
+  - toc
+  - codehilite
+  - md_in_html
