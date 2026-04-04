@@ -1,0 +1,7 @@
+{
+  "buildCommand": "pip install mkdocs-material && mkdocs build",
+  "outputDirectory": "site",
+  "env": {
+    "PYTHON_VERSION": "3.11"
+  }
+}
