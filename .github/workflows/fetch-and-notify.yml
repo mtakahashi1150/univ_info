@@ -72,11 +72,36 @@ jobs:
     runs-on: ubuntu-latest
     needs: fetch-and-notify
     
-    # GitHub Pages へのデプロイは後で実装
+    permissions:
+      pages: write
+      id-token: write
+    
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
     steps:
       - name: リポジトリをチェックアウト
         uses: actions/checkout@v4
       
-      - name: "ℹ️ 静的サイトビルドは mkdocs で実装予定"
+      - name: Python 環境をセットアップ
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: MkDocs をインストール
         run: |
-          echo "GitHub Pages デプロイは将来実装"
+          pip install mkdocs-material
+      
+      - name: MkDocs サイトをビルド
+        run: |
+          mkdocs build
+      
+      - name: GitHub Pages 用に site を準備
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'site'
+      
+      - name: GitHub Pages にデプロイ
+        id: deployment
+        uses: actions/deploy-pages@v4
