@@ -1,4 +1,0 @@
-{
-  "buildCommand": "pip install -r requirements.txt && pip install mkdocs-material && mkdocs build",
-  "outputDirectory": "site"
-}
