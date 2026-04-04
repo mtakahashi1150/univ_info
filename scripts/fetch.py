@@ -297,7 +297,9 @@ class UltraAdvancedScraper:
             'registration_url': source_info.get('url'),
             'details_url': source_info.get('url'),
             'extraction_method': result.get('method'),
-            'extracted_at': datetime.utcnow().isoformat() + 'Z'
+            'extracted_at': datetime.utcnow().isoformat() + 'Z',
+            'departments': source_info.get('department', '不明'),
+            'campus': source_info.get('campus', '不明')
         }]
         
         return events

@@ -1,0 +1,18 @@
+{
+  "university": "明治大学",
+  "source": "理工学部・情報科学科オープンキャンパス",
+  "source_url": "https://www.meiji.ac.jp/exam/event/opencampus/",
+  "fetched_at": "2026-04-04T22:35:18.527708Z",
+  "events": [
+    {
+      "title": "明治大学 - 理工学部・情報科学科オープンキャンパス",
+      "date": "2025-08-06",
+      "registration_url": "https://www.meiji.ac.jp/exam/event/opencampus/",
+      "details_url": "https://www.meiji.ac.jp/exam/event/opencampus/",
+      "extraction_method": "semantic_search(開催日)",
+      "extracted_at": "2026-04-04T22:35:18.527573Z",
+      "departments": "理工学部・総合数理学部",
+      "campus": "中野・駿河台・生田キャンパス"
+    }
+  ]
+}

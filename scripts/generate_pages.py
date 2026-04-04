@@ -25,7 +25,8 @@ for snapshot_file in sorted(snapshots_dir.glob('*.json'), reverse=True):
         with open(snapshot_file, 'r', encoding='utf-8') as f:
             snapshot = json.load(f)
             uni_name = snapshot.get('university')
-            if uni_name and uni_name not in universities_data:
+            # Skip Test entries
+            if uni_name and 'test' not in uni_name.lower() and uni_name not in universities_data:
                 universities_data[uni_name] = snapshot
     except:
         continue
@@ -40,13 +41,22 @@ for uni_name in sorted(universities_data.keys()):
     if events:
         event = events[0]
         event_date = event.get('date', '-')
+        departments = event.get('departments', '不明')
+        campus = event.get('campus', '不明')
+        
+        # Compact display: abbreviate for table
+        # Split departments and campus by slash, take first few
+        dept_short = departments.split('・')[0][:10] if '・' in departments else departments[:10]
+        campus_short = campus.split('・')[0][:8] if '・' in campus else campus[:8]
+        dept_campus = f"{dept_short}\n{campus_short}"
+        
         # Create anchor link to details section
         anchor_id = uni_name.replace(' ', '_').replace('大学', '').lower()
-        summary_rows.append(f"| [{uni_name}](#{anchor_id}) | {event_date} | {fetched_at} |")
+        summary_rows.append(f"| [{uni_name}](#{anchor_id}) | {dept_campus} | {event_date} | {fetched_at} |")
 
 # Build summary table header
-summary_table = """| 大学名 | 最新開催予定日 | 更新日 |
-|-------|------------|--------|
+summary_table = """| 大学名 | 対象学部・キャンパス | 最新開催予定日 | 更新日 |
+|-------|----------|------------|--------|
 """
 summary_table += '\n'.join(summary_rows)
 
@@ -58,7 +68,16 @@ for uni_name in sorted(universities_data.keys()):
     events = snapshot.get('events', [])
     source_url = snapshot.get('source_url', '')
     fetched_at = snapshot.get('fetched_at', '')
-    extraction_method = events[0].get('extraction_method', '-') if events else '-'
+    
+    if events:
+        event = events[0]
+        extraction_method = event.get('extraction_method', '-')
+        departments = event.get('departments', '不明')
+        campus = event.get('campus', '不明')
+    else:
+        extraction_method = '-'
+        departments = '不明'
+        campus = '不明'
     
     anchor_id = uni_name.replace(' ', '_').replace('大学', '').lower()
     
@@ -66,6 +85,8 @@ for uni_name in sorted(universities_data.keys()):
 
 - **最終更新**: {fetched_at}
 - **最新開催日**: {events[0].get('date', '-') if events else '-'}
+- **対象学部**: {departments}
+- **キャンパス**: {campus}
 - **抽出方法**: {extraction_method}
 - **詳細情報**: [オープンキャンパス案内ページ]({source_url}){{: target="_blank"}}
 
