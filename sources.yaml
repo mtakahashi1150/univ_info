@@ -23,19 +23,25 @@ universities:
 
   - name: "慶應義塾大学"
     sources:
-      - name: "理工学部オープンキャンパス"
-        url: "https://www.keio.ac.jp/ja/admission/guide/experience/"
+      - name: "オープンキャンパス2026"
+        url: "https://www.keio.ac.jp/ja/admissions/oc/"
+        url_alternatives:
+          - "https://www.keio.ac.jp/ja/admissions/events/"
+          - "https://www.keio.ac.jp/ja/admissions/"
         type: "opencampus"
         region: "Tokyo-Kanagawa"
         department: "理工学部"
-        campus: "日吉・三田キャンパス"
+        campus: "矢上・日吉・三田キャンパス"
         frequency: "annual"
         last_verified: "2026-04-05"
 
   - name: "上智大学"
     sources:
-      - name: "理工学部オープンキャンパス"
-        url: "https://www.sophia.ac.jp/jpn/admission/"
+      - name: "入試イベント情報"
+        url: "https://adm.sophia.ac.jp/jpn/event_ad/"
+        url_alternatives:
+          - "https://adm.sophia.ac.jp/jpn/news/gakubu_ad/sophia-open-campus-2026_news/"
+          - "https://www.sophia.ac.jp/jpn/admissions-and-aid/"
         type: "opencampus"
         region: "Tokyo"
         department: "理工学部"
@@ -68,8 +74,10 @@ universities:
 
   - name: "青山学院大学"
     sources:
-      - name: "理工学部オープンキャンパス"
-        url: "https://www.aoyama.ac.jp/exam/event/"
+      - name: "入試・入学情報"
+        url: "https://www.aoyama.ac.jp/admission/"
+        url_alternatives:
+          - "https://www.aoyama.ac.jp/"
         type: "opencampus"
         region: "Tokyo-Kanagawa"
         department: "理工学部・社会情報学部"
@@ -101,8 +109,11 @@ universities:
 
   - name: "法政大学"
     sources:
-      - name: "情報科学部・理工学部オープンキャンパス"
-        url: "https://www.hosei.ac.jp/admissions/event/"
+      - name: "オープンキャンパス情報"
+        url: "https://nyushi.hosei.ac.jp/event/oc"
+        url_alternatives:
+          - "https://nyushi.hosei.ac.jp/"
+          - "https://www.hosei.ac.jp/"
         type: "opencampus"
         region: "Tokyo"
         department: "情報科学部・理工学部・デザイン工学部"
@@ -112,11 +123,14 @@ universities:
 
   - name: "学習院大学"
     sources:
-      - name: "全学部オープンキャンパス"
-        url: "https://www.gakushuin.ac.jp/admission/"
+      - name: "入試情報"
+        url: "https://www.univ.gakushuin.ac.jp/admissions/"
+        url_alternatives:
+          - "https://www.univ.gakushuin.ac.jp/for_admissions/"
+          - "https://www.univ.gakushuin.ac.jp/"
         type: "opencampus"
         region: "Tokyo"
-        department: "理学部等"
+        department: "理学部"
         campus: "目白キャンパス"
         frequency: "annual"
         last_verified: "2026-04-05"
@@ -124,8 +138,11 @@ universities:
   # ============ 東京4理工（四工大） ============
   - name: "芝浦工業大学"
     sources:
-      - name: "工学部・システム理工学域オープンキャンパス"
-        url: "https://www.shibaura-it.ac.jp/admission/"
+      - name: "入試情報サイト"
+        url: "https://admissions.shibaura-it.ac.jp/"
+        url_alternatives:
+          - "https://www.shibaura-it.ac.jp/extra/oc-special/"
+          - "https://www.shibaura-it.ac.jp/examinee/"
         type: "opencampus"
         region: "Tokyo-Saitama"
         department: "工学部・システム理工学域"
@@ -146,8 +163,11 @@ universities:
 
   - name: "東京電機大学"
     sources:
-      - name: "システムデザイン工学部・未来科学部・工学部オープンキャンパス"
-        url: "https://www.dendai.ac.jp/admission/"
+      - name: "オープンキャンパス2026"
+        url: "https://www.dendai.ac.jp/about/admission/opencampus/index2026.html"
+        url_alternatives:
+          - "https://www.dendai.ac.jp/about/admission/index.html"
+          - "https://www.dendai.ac.jp/prospective-students/index.html"
         type: "opencampus"
         region: "Tokyo-Saitama"
         department: "システムデザイン工学部・未来科学部・工学部・理工学部"
@@ -169,8 +189,11 @@ universities:
   # ============ 首都圏私立理工 ============
   - name: "東京工科大学"
     sources:
-      - name: "コンピュータサイエンス学部・工学部オープンキャンパス"
-        url: "https://www.teu.ac.jp/admission/"
+      - name: "オープンキャンパス情報"
+        url: "https://jyuken.teu.ac.jp/jyuken/visit_oc.html"
+        url_alternatives:
+          - "https://jyuken.teu.ac.jp/jyuken/index.html"
+          - "https://www.teu.ac.jp/"
         type: "opencampus"
         region: "Tokyo"
         department: "コンピュータサイエンス学部・工学部"

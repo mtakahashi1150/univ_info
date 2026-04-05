@@ -1,0 +1,18 @@
+{
+  "university": "早稲田大学",
+  "source": "理工学部オープンキャンパス",
+  "source_url": "https://www.waseda.jp/inst/admission/",
+  "fetched_at": "2026-04-05T06:32:55.146611Z",
+  "events": [
+    {
+      "title": "早稲田大学 - 理工学部オープンキャンパス",
+      "date": "2026-08-23",
+      "registration_url": "https://www.waseda.jp/inst/admission/",
+      "details_url": "https://www.waseda.jp/inst/admission/",
+      "extraction_method": "semantic_search(開催)",
+      "extracted_at": "2026-04-05T06:32:55.146530Z",
+      "departments": "基幹理工学部・創造理工学部・先進理工学部",
+      "campus": "西早稲田キャンパス"
+    }
+  ]
+}

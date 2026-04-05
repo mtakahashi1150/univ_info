@@ -1,0 +1,493 @@
+{
+  "慶應義塾大学": {
+    "university": "慶應義塾大学",
+    "top_url": "https://www.keio.ac.jp/ja/",
+    "found_pages": [
+      {
+        "url": "https://www.keio.ac.jp/ja/admissions/events/",
+        "path": "トップ → 入学案内 - Across Keio → イベント",
+        "dates": [
+          "2026-08-23"
+        ],
+        "has_oc_keyword": true
+      },
+      {
+        "url": "https://www.keio.ac.jp/ja/events/",
+        "path": "トップ → 入学案内 - Across Keio → イベントカレンダー",
+        "dates": [
+          "2026-03-09",
+          "2026-04-01",
+          "2026-04-21",
+          "2026-04-23",
+          "2026-04-25",
+          "2026-04-27",
+          "2026-05-15"
+        ],
+        "has_oc_keyword": false
+      },
+      {
+        "url": "https://www.keio.ac.jp/ja/admissions/",
+        "path": "トップ → 入学案内",
+        "dates": [
+          "2026-01-19",
+          "2026-01-28",
+          "2026-02-11",
+          "2026-02-16",
+          "2026-02-24",
+          "2026-03-13",
+          "2026-03-19",
+          "2026-03-31",
+          "2026-04-01"
+        ],
+        "has_oc_keyword": true
+      },
+      {
+        "url": "https://www.keio.ac.jp/ja/maps/campus/visit/",
+        "path": "トップ → 入学案内 → キャンパス見学",
+        "dates": [
+          "2025-12-21",
+          "2025-12-31",
+          "2026-01-03",
+          "2026-02-01",
+          "2026-12-21",
+          "2026-12-31"
+        ],
+        "has_oc_keyword": true
+      },
+      {
+        "url": "https://www.keio.ac.jp/ja/admissions/oc/",
+        "path": "トップ → 入学案内 → 「オープンキャンパス2026」の開催について",
+        "dates": [
+          "2026-06-07",
+          "2026-08-04"
+        ],
+        "has_oc_keyword": true
+      },
+      {
+        "url": "https://www.keio.ac.jp/ja/admissions/events/",
+        "path": "トップ → 入学案内 → イベント",
+        "dates": [
+          "2026-08-23"
+        ],
+        "has_oc_keyword": true
+      },
+      {
+        "url": "https://www.keio.ac.jp/ja/admissions/med-tochigi/",
+        "path": "トップ → 入試制度 → 医学部",
+        "dates": [
+          "2025-06-24",
+          "2025-12-01",
+          "2026-06-24",
+          "2026-07-25",
+          "2026-12-01"
+        ],
+        "has_oc_keyword": false
+      },
+      {
+        "url": "https://www.keio.ac.jp/ja/admissions/events/",
+        "path": "トップ → 入試制度 → イベント",
+        "dates": [
+          "2026-08-23"
+        ],
+        "has_oc_keyword": true
+      }
+    ],
+    "best_url": "https://www.keio.ac.jp/ja/admissions/",
+    "navigation_path": [],
+    "best_path": "トップ → 入学案内",
+    "best_dates": [
+      "2026-01-19",
+      "2026-01-28",
+      "2026-02-11",
+      "2026-02-16",
+      "2026-02-24",
+      "2026-03-13",
+      "2026-03-19",
+      "2026-03-31",
+      "2026-04-01"
+    ]
+  },
+  "上智大学": {
+    "university": "上智大学",
+    "top_url": "https://www.sophia.ac.jp/jpn/",
+    "found_pages": [
+      {
+        "url": "https://www.sophia.ac.jp/jpn/search?q=オープンキャンパス",
+        "path": "トップ → オープンキャンパス",
+        "dates": [
+          "2026-08-01"
+        ],
+        "has_oc_keyword": true
+      },
+      {
+        "url": "https://www.sophia.ac.jp/jpn/search?q=オープンキャンパス",
+        "path": "トップ → Admissions & Aid入学案内 → オープンキャンパス",
+        "dates": [
+          "2026-08-01"
+        ],
+        "has_oc_keyword": true
+      },
+      {
+        "url": "https://adm.sophia.ac.jp/jpn/event_ad/",
+        "path": "トップ → 入試情報サイト → イベント",
+        "dates": [
+          "2026-03-28",
+          "2026-06-06",
+          "2026-06-13",
+          "2026-06-14",
+          "2026-06-20",
+          "2026-06-21",
+          "2026-06-28"
+        ],
+        "has_oc_keyword": true
+      },
+      {
+        "url": "https://adm.sophia.ac.jp/jpn/news/gakubu_ad/sophia-open-campus-2026_news/",
+        "path": "トップ → 入試情報サイト → SOPHIA OPEN CAMPUS 2026 開催決定！【8月4日（火）・8月5日（水）】",
+        "dates": [
+          "2026-04-03",
+          "2026-08-04",
+          "2026-08-05"
+        ],
+        "has_oc_keyword": true
+      },
+      {
+        "url": "https://www.sophia.ac.jp/jpn/search?q=オープンキャンパス",
+        "path": "トップ → 入学者受け入れの方針（アドミッション・ポリシー） → オープンキャンパス",
+        "dates": [
+          "2026-08-01"
+        ],
+        "has_oc_keyword": true
+      }
+    ],
+    "best_url": "https://adm.sophia.ac.jp/jpn/event_ad/",
+    "navigation_path": [],
+    "best_path": "トップ → 入試情報サイト → イベント",
+    "best_dates": [
+      "2026-03-28",
+      "2026-06-06",
+      "2026-06-13",
+      "2026-06-14",
+      "2026-06-20",
+      "2026-06-21",
+      "2026-06-28"
+    ]
+  },
+  "青山学院大学": {
+    "university": "青山学院大学",
+    "top_url": "https://www.aoyama.ac.jp/",
+    "found_pages": [
+      {
+        "url": "https://www.aoyama.ac.jp/post01/2025/event_20260227_01",
+        "path": "トップ → 学生主体型ミニオープンキャンパス  AOGAKU OPEN DAY 2026（青山キャンパス）2026.03.21",
+        "dates": [
+          "2026-03-21"
+        ],
+        "has_oc_keyword": true
+      },
+      {
+        "url": "https://www.aoyama.ac.jp/life/parents/parentsassociation",
+        "path": "トップ → 入試・入学情報ADMISSIONS → 大学後援会",
+        "dates": [
+          "2025-07-25",
+          "2026-07-25"
+        ],
+        "has_oc_keyword": true
+      },
+      {
+        "url": "https://www.aoyama.ac.jp/life/parents/parentsassociation",
+        "path": "トップ → 2026年度新入生向け案内年度初頭行事スケジュール等に関する重要なお知らせ → 大学後援会",
+        "dates": [
+          "2025-07-25",
+          "2026-07-25"
+        ],
+        "has_oc_keyword": true
+      },
+      {
+        "url": "https://www.aoyama.ac.jp/life/parents/parentsassociation",
+        "path": "トップ → MORE大学案内受験生向け大学案内 → 大学後援会",
+        "dates": [
+          "2025-07-25",
+          "2026-07-25"
+        ],
+        "has_oc_keyword": true
+      }
+    ],
+    "best_url": "https://www.aoyama.ac.jp/life/parents/parentsassociation",
+    "navigation_path": [],
+    "best_path": "トップ → 入試・入学情報ADMISSIONS → 大学後援会",
+    "best_dates": [
+      "2025-07-25",
+      "2026-07-25"
+    ]
+  },
+  "法政大学": {
+    "university": "法政大学",
+    "top_url": "https://www.hosei.ac.jp/",
+    "found_pages": [
+      {
+        "url": "https://www.hosei.ac.jp/edn/info/article-20250603100028/",
+        "path": "トップ → 学部入試情報 → （8/6）「デザインスクール」 高校生および受験生を対象に開催！（デザイン工学部）2025.06.04イベント",
+        "dates": [
+          "2025-06-03",
+          "2025-08-06",
+          "2026-06-03",
+          "2026-08-06"
+        ],
+        "has_oc_keyword": false
+      },
+      {
+        "url": "https://www.hosei.ac.jp/gis/info/article-20250526083046/",
+        "path": "トップ → 学部入試情報 → （6/22）GIS独自オープンキャンパス「オープンデイ2025」定員を増枠しました2025.05.29イベント",
+        "dates": [
+          "2025-05-26",
+          "2025-06-22",
+          "2026-05-26",
+          "2026-06-22"
+        ],
+        "has_oc_keyword": true
+      }
+    ],
+    "best_url": "https://www.hosei.ac.jp/gis/info/article-20250526083046/",
+    "navigation_path": [],
+    "best_path": "トップ → 学部入試情報 → （6/22）GIS独自オープンキャンパス「オープンデイ2025」定員を増枠しました2025.05.29イベント",
+    "best_dates": [
+      "2025-05-26",
+      "2025-06-22",
+      "2026-05-26",
+      "2026-06-22"
+    ]
+  },
+  "学習院大学": {
+    "university": "学習院大学",
+    "top_url": "https://www.univ.gakushuin.ac.jp/",
+    "found_pages": [
+      {
+        "url": "https://www.univ.gakushuin.ac.jp/global/current_events/",
+        "path": "トップ → 受験生の方 → 行事",
+        "dates": [
+          "2026-05-26",
+          "2026-05-27",
+          "2026-07-08",
+          "2026-10-20",
+          "2026-11-20"
+        ],
+        "has_oc_keyword": false
+      },
+      {
+        "url": "https://www.univ.gakushuin.ac.jp/global/current_events/",
+        "path": "トップ → 資料請求 → 行事",
+        "dates": [
+          "2026-05-26",
+          "2026-05-27",
+          "2026-07-08",
+          "2026-10-20",
+          "2026-11-20"
+        ],
+        "has_oc_keyword": false
+      },
+      {
+        "url": "https://www.univ.gakushuin.ac.jp/global/current_events/",
+        "path": "トップ → 入試情報 TOP → 行事",
+        "dates": [
+          "2026-05-26",
+          "2026-05-27",
+          "2026-07-08",
+          "2026-10-20",
+          "2026-11-20"
+        ],
+        "has_oc_keyword": false
+      }
+    ],
+    "best_url": "https://www.univ.gakushuin.ac.jp/global/current_events/",
+    "navigation_path": [],
+    "best_path": "トップ → 受験生の方 → 行事",
+    "best_dates": [
+      "2026-05-26",
+      "2026-05-27",
+      "2026-07-08",
+      "2026-10-20",
+      "2026-11-20"
+    ]
+  },
+  "芝浦工業大学": {
+    "university": "芝浦工業大学",
+    "top_url": "https://www.shibaura-it.ac.jp/",
+    "found_pages": [
+      {
+        "url": "https://www.shibaura-it.ac.jp/about/educational_foundation/recruit/life_event.html",
+        "path": "トップ → 入学案内 → ライフイベント時の働きやすさへ",
+        "dates": [
+          "2026-03-05"
+        ],
+        "has_oc_keyword": false
+      },
+      {
+        "url": "https://www.shibaura-it.ac.jp/about/educational_foundation/recruit/life_event.html",
+        "path": "トップ → 入学者受け入れの方針—アドミッション・ポリシー → ライフイベント時の働きやすさへ",
+        "dates": [
+          "2026-03-05"
+        ],
+        "has_oc_keyword": false
+      },
+      {
+        "url": "https://admissions.shibaura-it.ac.jp/event-info/%e3%80%90%e3%82%a2%e3%83%bc%e3%82%ab%e3%82%a4%e3%83%96%e5%8b%95%e7%94%bb%e5%85%ac%e9%96%8b%e3%80%91%e4%b8%80%e8%88%ac%e5%85%a5%e8%a9%a6%e7%9b%ae%e5%89%8d%ef%bc%81%e5%90%88%e6%a0%bc%e3%81%ae%e3%83%81/",
+        "path": "トップ → 入試情報サイト → 2025.11.14【アーカイブ動画公開】一般入試目前！合格のチャンスを広げるオンライン説明会&学生体験談",
+        "dates": [
+          "2025-11-09",
+          "2026-11-09"
+        ],
+        "has_oc_keyword": true
+      }
+    ],
+    "best_url": "https://admissions.shibaura-it.ac.jp/event-info/%e3%80%90%e3%82%a2%e3%83%bc%e3%82%ab%e3%82%a4%e3%83%96%e5%8b%95%e7%94%bb%e5%85%ac%e9%96%8b%e3%80%91%e4%b8%80%e8%88%ac%e5%85%a5%e8%a9%a6%e7%9b%ae%e5%89%8d%ef%bc%81%e5%90%88%e6%a0%bc%e3%81%ae%e3%83%81/",
+    "navigation_path": [],
+    "best_path": "トップ → 入試情報サイト → 2025.11.14【アーカイブ動画公開】一般入試目前！合格のチャンスを広げるオンライン説明会&学生体験談",
+    "best_dates": [
+      "2025-11-09",
+      "2026-11-09"
+    ]
+  },
+  "東京電機大学": {
+    "university": "東京電機大学",
+    "top_url": "https://www.dendai.ac.jp/",
+    "found_pages": [],
+    "best_url": null,
+    "navigation_path": []
+  },
+  "東京工科大学": {
+    "university": "東京工科大学",
+    "top_url": "https://www.teu.ac.jp/",
+    "found_pages": [
+      {
+        "url": "https://www.teu.ac.jp/#entrancetab",
+        "path": "トップ → 入試・入学情報",
+        "dates": [
+          "2025-06-10",
+          "2025-09-03",
+          "2025-09-09",
+          "2025-09-19",
+          "2025-09-22",
+          "2025-10-17",
+          "2025-10-30",
+          "2025-10-31",
+          "2025-11-05",
+          "2025-11-07",
+          "2025-12-01",
+          "2025-12-08",
+          "2025-12-09",
+          "2025-12-18",
+          "2025-12-19",
+          "2025-12-22",
+          "2025-12-23",
+          "2025-12-24",
+          "2025-12-25",
+          "2025-12-26",
+          "2026-01-20",
+          "2026-01-30",
+          "2026-02-05",
+          "2026-02-06",
+          "2026-02-09",
+          "2026-02-10",
+          "2026-02-19",
+          "2026-03-03",
+          "2026-03-04",
+          "2026-03-12",
+          "2026-03-13",
+          "2026-03-26",
+          "2026-03-27",
+          "2026-03-30",
+          "2026-04-01",
+          "2026-04-02"
+        ],
+        "has_oc_keyword": true
+      },
+      {
+        "url": "https://www.teu.ac.jp/event_info/index.html",
+        "path": "トップ → 入試・入学情報 → イベント一覧へ",
+        "dates": [
+          "2026-01-20",
+          "2026-02-18",
+          "2026-02-23",
+          "2026-03-12",
+          "2026-03-16",
+          "2026-03-20",
+          "2026-04-02",
+          "2026-04-11",
+          "2026-04-16",
+          "2026-04-23",
+          "2026-04-24",
+          "2026-05-09",
+          "2026-06-05",
+          "2026-07-02",
+          "2026-07-09",
+          "2026-07-13",
+          "2026-07-17",
+          "2026-07-26",
+          "2026-09-21",
+          "2026-09-26",
+          "2026-10-11",
+          "2026-10-14",
+          "2026-10-16",
+          "2026-10-18",
+          "2026-11-07",
+          "2026-11-15",
+          "2026-12-17",
+          "2026-12-24",
+          "2026-12-25"
+        ],
+        "has_oc_keyword": false
+      },
+      {
+        "url": "https://www.teu.ac.jp/press/2025.html?id=246",
+        "path": "トップ → 入試・入学情報 → プレスリリース2025/10/17公共空間の雑⾳下でも必要な情報が誰にでも届く社会へ―Auracast™+Wi-Fiによ",
+        "dates": [
+          "2025-10-17",
+          "2026-10-17"
+        ],
+        "has_oc_keyword": true
+      }
+    ],
+    "best_url": "https://www.teu.ac.jp/#entrancetab",
+    "navigation_path": [],
+    "best_path": "トップ → 入試・入学情報",
+    "best_dates": [
+      "2025-06-10",
+      "2025-09-03",
+      "2025-09-09",
+      "2025-09-19",
+      "2025-09-22",
+      "2025-10-17",
+      "2025-10-30",
+      "2025-10-31",
+      "2025-11-05",
+      "2025-11-07",
+      "2025-12-01",
+      "2025-12-08",
+      "2025-12-09",
+      "2025-12-18",
+      "2025-12-19",
+      "2025-12-22",
+      "2025-12-23",
+      "2025-12-24",
+      "2025-12-25",
+      "2025-12-26",
+      "2026-01-20",
+      "2026-01-30",
+      "2026-02-05",
+      "2026-02-06",
+      "2026-02-09",
+      "2026-02-10",
+      "2026-02-19",
+      "2026-03-03",
+      "2026-03-04",
+      "2026-03-12",
+      "2026-03-13",
+      "2026-03-26",
+      "2026-03-27",
+      "2026-03-30",
+      "2026-04-01",
+      "2026-04-02"
+    ]
+  }
+}

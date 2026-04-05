@@ -1,0 +1,18 @@
+{
+  "university": "東京工科大学",
+  "source": "オープンキャンパス情報",
+  "source_url": "https://jyuken.teu.ac.jp/jyuken/visit_oc.html",
+  "fetched_at": "2026-04-05T06:33:02.152377Z",
+  "events": [
+    {
+      "title": "東京工科大学 - オープンキャンパス情報",
+      "date": "2026-06-07",
+      "registration_url": "https://jyuken.teu.ac.jp/jyuken/visit_oc.html",
+      "details_url": "https://jyuken.teu.ac.jp/jyuken/visit_oc.html",
+      "extraction_method": "semantic_search(開催)",
+      "extracted_at": "2026-04-05T06:33:02.152345Z",
+      "departments": "コンピュータサイエンス学部・工学部",
+      "campus": "八王子・蒲田キャンパス"
+    }
+  ]
+}

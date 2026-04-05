@@ -1,0 +1,18 @@
+{
+  "university": "東京電機大学",
+  "source": "オープンキャンパス2026",
+  "source_url": "https://www.dendai.ac.jp/about/admission/index.html",
+  "fetched_at": "2026-04-05T06:33:01.715802Z",
+  "events": [
+    {
+      "title": "東京電機大学 - オープンキャンパス2026",
+      "date": "2026-06-11",
+      "registration_url": "https://www.dendai.ac.jp/about/admission/index.html",
+      "details_url": "https://www.dendai.ac.jp/about/admission/index.html",
+      "extraction_method": "semantic_search(開催日)",
+      "extracted_at": "2026-04-05T06:33:01.715735Z",
+      "departments": "システムデザイン工学部・未来科学部・工学部・理工学部",
+      "campus": "東京千住・埼玉鳩山キャンパス"
+    }
+  ]
+}

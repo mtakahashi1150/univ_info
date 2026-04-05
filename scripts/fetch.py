@@ -18,6 +18,7 @@ from bs4 import BeautifulSoup
 import logging
 import re
 import time
+from urllib.parse import urljoin
 
 logging.basicConfig(
     level=logging.INFO,
@@ -257,41 +258,109 @@ class UltraAdvancedScraper:
         
         return None
 
+    def get_best_future_date(self, dates: List[str]) -> Optional[str]:
+        """日付リストから最も近い未来の日付を返す"""
+        today = datetime.now().strftime('%Y-%m-%d')
+        future = [d for d in sorted(dates) if d >= today]
+        return future[0] if future else None
+
+    def follow_oc_links(self, soup: BeautifulSoup, base_url: str) -> List[Dict[str, str]]:
+        """ページ内のOC関連リンクを探して返す（1段階フォロー用）"""
+        oc_keywords = [
+            'オープンキャンパス', 'opencampus', 'open-campus', 'open_campus',
+            'オープンデイ', 'openday', 'open-day',
+            'キャンパス見学', 'キャンパス体験',
+        ]
+        event_keywords = [
+            'イベント', 'event', '説明会', '体験入学', '進学相談',
+        ]
+
+        links = []
+        for a_tag in soup.find_all('a', href=True):
+            href = a_tag.get('href', '')
+            text = a_tag.get_text(strip=True)
+            combined = (text + ' ' + href).lower()
+
+            is_oc = any(kw.lower() in combined for kw in oc_keywords)
+            is_event = any(kw.lower() in combined for kw in event_keywords)
+
+            if is_oc or is_event:
+                full_url = urljoin(base_url, href)
+                if full_url.startswith('http') and full_url != base_url:
+                    links.append({
+                        'url': full_url,
+                        'text': text,
+                        'priority': 1 if is_oc else 2
+                    })
+
+        seen = set()
+        unique = []
+        for link in sorted(links, key=lambda x: x['priority']):
+            if link['url'] not in seen:
+                seen.add(link['url'])
+                unique.append(link)
+
+        return unique[:5]
+
     def extract_events(
         self,
         html: str,
         source_info: Dict[str, Any],
         university_name: str
     ) -> List[Dict[str, Any]]:
-        """複数技法での段階的抽出"""
+        """複数技法での段階的抽出（未来日付優先）"""
         if not html:
             return []
-        
+
         soup = BeautifulSoup(html, 'html.parser')
-        
-        extractors = [
-            self.extract_by_structured_data,
-            self.extract_by_semantic_search,
-            self.extract_by_table_analysis,
-            self.extract_by_list_parsing,
-            self.extract_by_text_search,
-        ]
-        
-        result = None
-        for extractor_func in extractors:
-            try:
-                result = extractor_func(soup)
-                if result:
-                    break
-            except Exception as e:
-                logger.debug(f"   Extractor failed: {e}")
-                continue
-        
-        if not result:
+
+        # 構造化データを最優先
+        result = self.extract_by_structured_data(soup)
+        if result:
+            future = self.get_best_future_date([result['date']])
+            if future:
+                result['date'] = future
+                return self._build_events(result, source_info, university_name)
+
+        # 全テキスト＋アンカーテキストから日付を収集
+        text = soup.get_text()
+        all_dates = self.extract_all_dates(text)
+        for a_tag in soup.find_all('a', href=True):
+            link_dates = self.extract_all_dates(a_tag.get_text(strip=True))
+            all_dates.extend(link_dates)
+        all_dates = sorted(set(all_dates))
+
+        if not all_dates:
             logger.warning(f"   ❌ No date found")
             return []
-        
-        events = [{
+
+        # 未来日付を優先、なければ最新の過去日付
+        best_date = self.get_best_future_date(all_dates)
+        if not best_date:
+            best_date = all_dates[-1]
+
+        # セマンティック検索一致ならそのメソッド名を使用
+        method = "text_search"
+        try:
+            sem = self.extract_by_semantic_search(soup)
+            if sem:
+                method = sem['method']
+        except Exception:
+            pass
+
+        return self._build_events(
+            {"date": best_date, "method": method},
+            source_info, university_name
+        )
+
+    def _build_events(
+        self,
+        result: Dict[str, Any],
+        source_info: Dict[str, Any],
+        university_name: str
+    ) -> List[Dict[str, Any]]:
+        """抽出結果からイベントリストを構築"""
+        return [{
             'title': f"{university_name} - {source_info.get('name', 'オープンキャンパス')}",
             'date': result['date'],
             'registration_url': source_info.get('url'),
@@ -301,8 +370,6 @@ class UltraAdvancedScraper:
             'departments': source_info.get('department', '不明'),
             'campus': source_info.get('campus', '不明')
         }]
-        
-        return events
 
     def save_snapshot(
         self,
@@ -436,28 +503,58 @@ def main():
             for source in sources:
                 source_name = source.get('name', 'Unknown')
                 source_url = source.get('url')
+                alternatives = source.get('url_alternatives', [])
 
                 if not source_url:
                     logger.warning(f"  ⚠ No URL")
                     continue
 
-                html = scraper.fetch_url(source_url)
-                if not html:
-                    logger.error(f"  ❌ Failed to fetch")
-                    fail_count += 1
-                    continue
+                urls_to_try = [source_url] + alternatives
+                events = None
+                effective_url = source_url
 
-                events = scraper.extract_events(html, source, uni_name)
+                for try_url in urls_to_try:
+                    html = scraper.fetch_url(try_url)
+                    if not html:
+                        continue
+
+                    events = scraper.extract_events(html, source, uni_name)
+                    if events:
+                        effective_url = try_url
+                        break
+
+                    # ハブページからOC関連リンクを1段階フォロー
+                    soup = BeautifulSoup(html, 'html.parser')
+                    oc_links = scraper.follow_oc_links(soup, try_url)
+                    for link_info in oc_links:
+                        logger.info(f"  → Following: {link_info['text'][:30]}")
+                        link_html = scraper.fetch_url(link_info['url'])
+                        if link_html:
+                            events = scraper.extract_events(
+                                link_html, source, uni_name
+                            )
+                            if events:
+                                effective_url = link_info['url']
+                                events[0]['details_url'] = link_info['url']
+                                break
+                    if events:
+                        break
+
                 if not events:
                     logger.warning(f"  ⚠ No events extracted")
                     fail_count += 1
                     continue
 
+                # 実際に取得できたURLでイベント情報を更新
+                events[0]['registration_url'] = effective_url
+                if events[0].get('details_url') == source.get('url'):
+                    events[0]['details_url'] = effective_url
+
                 snapshot_path = scraper.save_snapshot(
                     university_name=uni_name,
                     source_name=source_name,
                     events=events,
-                    source_url=source_url
+                    source_url=effective_url
                 )
 
                 with open(snapshot_path, 'r', encoding='utf-8') as f:

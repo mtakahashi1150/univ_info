@@ -1,0 +1,18 @@
+{
+  "university": "学習院大学",
+  "source": "入試情報",
+  "source_url": "https://www.univ.gakushuin.ac.jp/admissions/",
+  "fetched_at": "2026-04-05T06:32:59.788035Z",
+  "events": [
+    {
+      "title": "学習院大学 - 入試情報",
+      "date": "2026-02-15",
+      "registration_url": "https://www.univ.gakushuin.ac.jp/admissions/",
+      "details_url": "https://www.univ.gakushuin.ac.jp/admissions/",
+      "extraction_method": "text_search",
+      "extracted_at": "2026-04-05T06:32:59.787963Z",
+      "departments": "理学部",
+      "campus": "目白キャンパス"
+    }
+  ]
+}

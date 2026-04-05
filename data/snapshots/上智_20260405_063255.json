@@ -1,0 +1,18 @@
+{
+  "university": "上智大学",
+  "source": "入試イベント情報",
+  "source_url": "https://adm.sophia.ac.jp/jpn/event_ad/",
+  "fetched_at": "2026-04-05T06:32:55.629610Z",
+  "events": [
+    {
+      "title": "上智大学 - 入試イベント情報",
+      "date": "2026-06-06",
+      "registration_url": "https://adm.sophia.ac.jp/jpn/event_ad/",
+      "details_url": "https://adm.sophia.ac.jp/jpn/event_ad/",
+      "extraction_method": "text_search",
+      "extracted_at": "2026-04-05T06:32:55.629567Z",
+      "departments": "理工学部",
+      "campus": "四谷キャンパス"
+    }
+  ]
+}

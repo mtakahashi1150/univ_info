@@ -1,0 +1,18 @@
+{
+  "university": "青山学院大学",
+  "source": "入試・入学情報",
+  "source_url": "https://www.aoyama.ac.jp/admission/undergraduate/open_campus/",
+  "fetched_at": "2026-04-05T06:32:57.172278Z",
+  "events": [
+    {
+      "title": "青山学院大学 - 入試・入学情報",
+      "date": "2026-07-12",
+      "registration_url": "https://www.aoyama.ac.jp/admission/undergraduate/open_campus/",
+      "details_url": "https://www.aoyama.ac.jp/admission/undergraduate/open_campus/",
+      "extraction_method": "semantic_search(開催日)",
+      "extracted_at": "2026-04-05T06:32:57.172234Z",
+      "departments": "理工学部・社会情報学部",
+      "campus": "相模原・青山キャンパス"
+    }
+  ]
+}

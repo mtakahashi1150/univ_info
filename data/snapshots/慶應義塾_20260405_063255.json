@@ -1,0 +1,18 @@
+{
+  "university": "慶應義塾大学",
+  "source": "オープンキャンパス2026",
+  "source_url": "https://www.keio.ac.jp/ja/admissions/oc/",
+  "fetched_at": "2026-04-05T06:32:55.431904Z",
+  "events": [
+    {
+      "title": "慶應義塾大学 - オープンキャンパス2026",
+      "date": "2026-06-07",
+      "registration_url": "https://www.keio.ac.jp/ja/admissions/oc/",
+      "details_url": "https://www.keio.ac.jp/ja/admissions/oc/",
+      "extraction_method": "text_search",
+      "extracted_at": "2026-04-05T06:32:55.431842Z",
+      "departments": "理工学部",
+      "campus": "矢上・日吉・三田キャンパス"
+    }
+  ]
+}

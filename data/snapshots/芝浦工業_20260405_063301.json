@@ -1,0 +1,18 @@
+{
+  "university": "芝浦工業大学",
+  "source": "入試情報サイト",
+  "source_url": "https://admissions.shibaura-it.ac.jp/event-info/%e3%80%90%e3%82%a2%e3%83%bc%e3%82%ab%e3%82%a4%e3%83%96%e5%8b%95%e7%94%bb%e5%85%ac%e9%96%8b%e3%80%91%e4%b8%80%e8%88%ac%e5%85%a5%e8%a9%a6%e7%9b%ae%e5%89%8d%ef%bc%81%e5%90%88%e6%a0%bc%e3%81%ae%e3%83%81/",
+  "fetched_at": "2026-04-05T06:33:01.040662Z",
+  "events": [
+    {
+      "title": "芝浦工業大学 - 入試情報サイト",
+      "date": "2026-11-09",
+      "registration_url": "https://admissions.shibaura-it.ac.jp/event-info/%e3%80%90%e3%82%a2%e3%83%bc%e3%82%ab%e3%82%a4%e3%83%96%e5%8b%95%e7%94%bb%e5%85%ac%e9%96%8b%e3%80%91%e4%b8%80%e8%88%ac%e5%85%a5%e8%a9%a6%e7%9b%ae%e5%89%8d%ef%bc%81%e5%90%88%e6%a0%bc%e3%81%ae%e3%83%81/",
+      "details_url": "https://admissions.shibaura-it.ac.jp/event-info/%e3%80%90%e3%82%a2%e3%83%bc%e3%82%ab%e3%82%a4%e3%83%96%e5%8b%95%e7%94%bb%e5%85%ac%e9%96%8b%e3%80%91%e4%b8%80%e8%88%ac%e5%85%a5%e8%a9%a6%e7%9b%ae%e5%89%8d%ef%bc%81%e5%90%88%e6%a0%bc%e3%81%ae%e3%83%81/",
+      "extraction_method": "text_search",
+      "extracted_at": "2026-04-05T06:33:01.040622Z",
+      "departments": "工学部・システム理工学域",
+      "campus": "豊洲・大宮キャンパス"
+    }
+  ]
+}
