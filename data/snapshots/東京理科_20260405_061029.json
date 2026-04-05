@@ -1,0 +1,18 @@
+{
+  "university": "東京理科大学",
+  "source": "創域情報学部・工学部オープンキャンパス",
+  "source_url": "https://www.tus.ac.jp/admissions/university/visittus/opencampus/",
+  "fetched_at": "2026-04-05T06:10:29.334405Z",
+  "events": [
+    {
+      "title": "東京理科大学 - 創域情報学部・工学部オープンキャンパス",
+      "date": "2026-04-19",
+      "registration_url": "https://www.tus.ac.jp/admissions/university/visittus/opencampus/",
+      "details_url": "https://www.tus.ac.jp/admissions/university/visittus/opencampus/",
+      "extraction_method": "semantic_search(開催)",
+      "extracted_at": "2026-04-05T06:10:29.334312Z",
+      "departments": "創域情報学部・工学部・先進工学部",
+      "campus": "野田・葛飾・神楽坂キャンパス"
+    }
+  ]
+}

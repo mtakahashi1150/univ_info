@@ -1,0 +1,18 @@
+{
+  "university": "立教大学",
+  "source": "人工知能科学部・理学部オープンキャンパス",
+  "source_url": "https://www.rikkyo.ac.jp/admissions/visit/opencampus/index.html",
+  "fetched_at": "2026-04-05T06:10:33.998891Z",
+  "events": [
+    {
+      "title": "立教大学 - 人工知能科学部・理学部オープンキャンパス",
+      "date": "2026-08-03",
+      "registration_url": "https://www.rikkyo.ac.jp/admissions/visit/opencampus/index.html",
+      "details_url": "https://www.rikkyo.ac.jp/admissions/visit/opencampus/index.html",
+      "extraction_method": "semantic_search(開催日)",
+      "extracted_at": "2026-04-05T06:10:33.998842Z",
+      "departments": "人工知能科学部・理学部",
+      "campus": "新座・池袋キャンパス"
+    }
+  ]
+}

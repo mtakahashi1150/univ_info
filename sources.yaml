@@ -13,7 +13,7 @@ universities:
   - name: "早稲田大学"
     sources:
       - name: "理工学部オープンキャンパス"
-        url: "https://www.waseda.jp/inst/admission/event/oc/"
+        url: "https://www.waseda.jp/inst/admission/"
         type: "opencampus"
         region: "Tokyo"
         department: "基幹理工学部・創造理工学部・先進理工学部"
